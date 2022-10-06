@@ -31,8 +31,7 @@ while n != 0:
             digito += [linha[i]]
         digitos += [digito]
 
-    # substituindo as letras por seus respectivos digitos na ordem em
-    # que aparencia
+    # substituindo as letras por seus respectivos digitos na ordem em que aparecem
     # exemplo:
     # ["A", "B", "C", "D", "E"] entrada
     # ['39', '08', '24', '17', '24', '39'] saída
