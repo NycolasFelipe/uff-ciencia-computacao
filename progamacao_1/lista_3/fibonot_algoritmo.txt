@@ -1,0 +1,75 @@
+n2 1
+valor 1
+
+
+n2
+valor 1
+n2 > valor? não
+
+.
+
+n2 1
+valor 1
+n2 > valor? não
+.
+
+n2 2
+valor 1
+n2 > valor? sim
+  valor+1 -> valor 2
+  n2 != valor? index += 1
+.
+
+n2 3
+valor 2
+n2 > valor? sim
+  valor+1 -> valor 3
+  n2 != valor? não
+.
+
+n2 5
+valor 3
+n2 > valor? sim
+  valor+1 -> valor 4
+  n2 != valor? sim
+    index 1
+    n1 = 1
+    n2 = 0
+.
+    
+n2 1
+valor 4
+n2 > valor? não
+.
+
+n2 1
+valor 4
+n2 > valor? não
+.
+
+
+n2 2
+valor 4
+n2 > valor? não
+.
+
+n2 3
+valor 4
+n2 > valor? não
+.
+
+n2 5
+valor 4
+n2 > valor? sim
+  valor += 1 -> valor 5
+  n2 != valor? não
+.  
+
+n2 8 
+valor 5
+n2 > valor? sim
+  valor += 1 -> valor 6
+  n2 != valor? sim
+    index 2
+    n1 = 1
+    n2 = 0
