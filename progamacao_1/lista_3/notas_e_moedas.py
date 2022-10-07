@@ -1,43 +1,43 @@
 valor = float(input())
-resto = valor
+resto = valor * 100
 
 # notas
-notas_100 = resto // 100
-resto %= 100
+notas_100 = resto // 10000
+resto %= 10000
 
-notas_50 = resto // 50
-resto %= 50
+notas_50 = resto // 5000
+resto %= 5000
 
-notas_20 = resto // 20
-resto %= 20
+notas_20 = resto // 2000
+resto %= 2000
 
-notas_10 = resto // 10
-resto %= 10
+notas_10 = resto // 1000
+resto %= 1000
 
-notas_5 = resto // 5
-resto %= 5
+notas_5 = resto // 500
+resto %= 500
 
-notas_2 = resto // 2
-resto %= 2
+notas_2 = resto // 200
+resto %= 200
 
 # moedas
-moedas_1 = resto // 1
+moedas_1 = resto // 100
+resto %= 100
+
+moedas_50 = resto // 50
+resto %= 50
+
+moedas_25 = resto // 25
+resto %= 25
+
+moedas_10 = resto // 10
+resto %= 10
+
+moedas_05 = resto // 5
+resto %= 5
+
+moedas_01 = resto // 1
 resto %= 1
-
-moedas_50 = resto // 0.50
-resto %= 0.50
-
-moedas_25 = resto // 0.25
-resto %= 0.25
-
-moedas_10 = resto // 0.10
-resto %= 0.10
-
-moedas_05 = resto // 0.05
-resto %= 0.05
-
-moedas_01 = resto // 0.01
-resto %= 0.01
 
 # print notas
 print("NOTAS:")
