@@ -10,17 +10,17 @@ while True:
 
         salto_soma = int(input())
 
-        for i in range(0, qtd_moedas, salto_soma):
+        for i in range(len(lista_moedas)-1, -1, -salto_soma):
             soma += lista_moedas[i]
 
-        for i in range(2, soma):
+        for i in range(2, soma+1):
+            # é primo
+            if i == soma:
+                print("You're a coastal aircraft, Robbie, a large silver aircraft.")
             # não é primo
-            if soma % i == 0:
+            elif soma % i == 0:
                 print("Bad boy! I'll hit you.")
                 break
-            # é primo
-            elif i == soma-1:
-                print("You're a coastal aircraft, Robbie, a large silver aircraft.")
-                jogando = False
+
     except EOFError:
         break
