@@ -1,0 +1,82 @@
+escada perfeita:
+1 2 3 ...
+n n+1 n+2 ...
+
+
+1 2 3
+soma: 6
+
+2 3 4
+soma: 9
+
+3 4 5
+soma: 12
+
+4 5 6
+soma: 15
+
+distancia sempre de 3
+está relacionado com o numero
+de degraus.
+
+escadas com 2 degraus sempre vai
+ter blocos com soma 3 e 5, 5 e 7, etc
+
+escadas com 3 degraus sempre vai
+ter blocos com soma 6 e 9, 9 e 12, etc
+
+///////
+
+soma 5 a 1:
+soma = 5+4+3+2+1
+     = 9+6 = 15
+     
+soma 6 a 2:
+soma = 6+5+4+3+2
+     = 11+9 = 20
+
+distancia: 5
+
+
+5 4 5 4 2
+soma: 14+6=20
+
+20-15 = 5/5=1
+
+20 é multiplo, portanto pode montar uma escada
+
+///////
+
+soma 6 a 1:
+15+6 = 21
+
+soma 7 a 2:
+7+6+5+4+3+2
+13+9+5 = 27
+
+distancia: 6
+
+9 8 7 6 5 4
+soma: 17+13+9 = 39
+
+
+39-21=18/6=3
+
+
+///
+
+1+2=3
+
+1+5=6-3=3/3=1
+
+
+
+
+
+
+
+
+
+
+
+
