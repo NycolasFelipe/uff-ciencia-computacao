@@ -4,8 +4,10 @@ consegue = "S"
 
 for i in range(num):
     if i == num-1:
+        if 42195 > postos[i]+distancia:
+            consegue = "N"
         break
-    if postos[i+1] > postos[i]+distancia:
+    elif postos[i+1] > postos[i]+distancia:
         consegue = "N"
         break
 
