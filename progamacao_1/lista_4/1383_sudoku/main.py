@@ -1,18 +1,17 @@
+arquivo = open('matrizes.txt', 'r')
+matrizes = arquivo.readlines()
 n = int(input())
 cont = 0
 
 for m in range(n):
-    matrizes = []
     cont += 1
     print(f"Instancia {cont}")
-
-    for _ in range(9):
-        matrizes += [input()]
+    print(matrizes)
 
     matriz = []
     linha = ''
     for i in range(9):
-        linha += matrizes[i]
+        linha += matrizes[i+(m*8)+(1*m)][0:-1]
         matriz += [linha.split()]
         linha = ''
 
@@ -64,4 +63,6 @@ for m in range(n):
         print("NAO")
     else:
         print("SIM")
-    print("")
+
+
+arquivo.close()
