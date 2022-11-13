@@ -7,21 +7,27 @@ for i in range(x):
     for j in range(y):
         matriz[i][j] = linha[j]
 
+print(matriz)
+
 for i in range(1, x-1):
     for j in range(1, y-1):
         if matriz[i][j] == 42:
-            cont = 0
-            for k in range(i-1, i+2):
-                for l in range(j-1, j+2):
-                    if matriz[k][l] == 7:
-                        cont += 1
-            if cont == 8:
+            if matriz[i-1][j-1] == 7 and \
+                    matriz[i][j-1] == 7 and \
+                    matriz[i+1][j-1] == 7 and \
+                    matriz[i-1][j] == 7 and \
+                    matriz[i+1][j] == 7 and \
+                    matriz[i-1][j+1] == 7 and \
+                    matriz[i][j+1] == 7 and \
+                    matriz[i+1][j+1] == 7:
                 encontrou = True
                 print(i+1, j+1)
-                break
+        if encontrou:
+            quit()
 
 if not encontrou:
     print('0 0')
+
 
 # while:
 #     if num_i < x-1 and num_j == y-1:
