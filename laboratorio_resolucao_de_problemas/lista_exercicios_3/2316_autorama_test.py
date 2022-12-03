@@ -1,3 +1,11 @@
+def readFile(url):
+    arq = open(url, 'r')
+    linhas = arq.readlines()
+    for i in range(len(linhas)):
+        linhas[i] = linhas[i][:-1]
+    return linhas
+
+
 def sort_tabela(lista):
     # [numeroCarro, numeroPostos, ordemChegada, numeroVoltas]
     # ordem por numero de voltas
@@ -39,11 +47,15 @@ def sort_tabela(lista):
     return lista
 
 
-k, n, m = map(int, input().split())
+arquivo = readFile('2316_autorama_test.txt')
+k, n, m = map(int, arquivo[0].split())
+
+# [numeroCarro, numeroPostos, ordemChegada, numeroVoltas]
 tabela = [[int(i), 0, 0, 0] for i in range(1, n+1)]
 
-for i in range(m):
-    x, y = map(int, input().split())
+
+for i in range(1, len(arquivo)):
+    x, y = map(int, arquivo[i].split())
     if tabela[x-1][1] == y-1:
         tabela[x-1][1] += 1
         tabela[x-1][2] = i
